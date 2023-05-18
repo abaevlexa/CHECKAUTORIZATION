@@ -1,0 +1,22 @@
+﻿<Window x:Class="CHECKAUTORIZATION.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CHECKAUTORIZATION"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock  FontSize="22" HorizontalAlignment="Center">Регистрация</TextBlock>
+        <TextBlock FontSize="20" HorizontalAlignment="Center">Почта</TextBlock>
+        <TextBox  Name="TxbLogin"  FontSize="20" HorizontalAlignment="Center" Width="150" Height="30"></TextBox>
+        <TextBlock FontSize="22" HorizontalAlignment="Center">Пароль</TextBlock>
+        <TextBox  Name="TxbPassword" FontSize="22" HorizontalAlignment="Center" Width="150" Height="30"></TextBox>
+        <PasswordBox Name="PsbPassword" FontSize="22" HorizontalAlignment="Center" Width="150" Height="30" Margin="0,15,0,0"></PasswordBox>
+        <TextBlock FontSize="22" HorizontalAlignment="Center">Введите капчу</TextBlock>
+        <TextBox  Name="CaptchaTxb" FontSize="22" HorizontalAlignment="Center" Width="150" Height="30" Margin="0,15,0,0" TextChanged="CaptchaTxb_TextChanged" ></TextBox>
+        <TextBox  Name="CaptchaProverka" FontSize="22" HorizontalAlignment="Center" Width="150" Height="30" Margin="0,15,0,0" ></TextBox>
+        <Button Name="CapBtn" FontSize="22" HorizontalAlignment="Center" Width="150" Height="30" Margin="0,15,0,0" Click="CapBtn_Click">GENERATE</Button>
+        <Button Name="BtnLogin" FontSize="22" HorizontalAlignment="Center" Width="150" Height="30" Margin="0,15,0,0" Click="BtnLogin_Click">OK</Button>
+    </StackPanel>
+</Window>
